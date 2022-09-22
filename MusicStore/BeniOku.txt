@@ -1,8 +1,12 @@
-﻿
+
 
 /************************ Music Store Projesi ***********************/
 
 * 4 katmandan oluşur.
+
+ * bu projede örnek bir müzik sitesini katmanlı mimari kullanılarak oluşturuldu.
+ 
+ * Katmanların içerisindeki kısa bilgiler aşağıda belirtilmiştir.
 
 /*********************** MusicStore.Utility katmanı **************************/
 * data eklendiğinde sonuç mesajlarını ve veritabanındaki store procedure yoluyla albüme kapak resmi için crud işlemlerini yapmak için kullanılır.
