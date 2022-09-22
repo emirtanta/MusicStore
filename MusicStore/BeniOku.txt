@@ -1,0 +1,43 @@
+﻿
+
+/************************ Music Store Projesi ***********************/
+
+* 4 katmandan oluşur.
+
+/*********************** MusicStore.Utility katmanı **************************/
+* data eklendiğinde sonuç mesajlarını ve veritabanındaki store procedure yoluyla albüme kapak resmi için crud işlemlerini yapmak için kullanılır.
+
+********************************************************************************
+
+
+/******************************* MusicStore.Models Katmanı ***************/
+
+* Veritabanında oluşturulacak tabloların ve web kısmında kullanıcak yapay class'ların tutulduğu bölümdür
+
+********************************************************************************
+
+/************************** MusicStore.DataAccess Katmanı **********************/
+
+* Veritabanı için oluşturulan Entity'lerin,UnitOfWork yapılarının tutulduğu yerdir.
+
+******************************************************************************
+
+/********************* MusicStore Katmanı *********************************/
+
+* Projenin son kullanıcının göreceği yapıların kodlandığı bölümdür.
+
+* Projede ckEditör veya tivy editör kullanılabilir. tiny editör kullanılırsa tiny editör sitesine girip üye olunması ve bir api key alınması gerekmektedir. Bu projede tny editör kullanılmıştır
+
+* Ödeme İşlemi için Stripe kısmı kullanıldı. İsteyen iyzico kullanılabilir.
+
+=>nuget üzerinden stripe yazılarak stripe.net kütüphanesi indirilir.
+
+=> applicationJson içerisine stripe sitesinden alınan key bilgileri girilir.
+
+=> Utilities katmanında Stripe için bir sınıf oluşturulur.
+
+=> StartUp.cs içerisinde Stripe için gerekli servisler açılır(Confuration ve Configure kısmında)
+
+=> Summary.cshtml içerisinde de Stripe için gerekli kodlar yazıldı
+
+Not: send grid üzerinden mail gönderilmiyor
